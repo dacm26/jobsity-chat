@@ -1,0 +1,22 @@
+{
+  "name": "jobsity-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "git submodule update --init --remote; git submodule foreach 'git checkout master'; git submodule foreach 'npm i';",
+    "start:be": "npm run start:dev --prefix=packages/nestjs-chat-server",
+    "start:fe": "npm run start --prefix=packages/angular-chat-client",
+    "start": "concurrently --raw \"npm run start:be\" \"npm run start:fe\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://25e4b547b4b685c76b6324e9d9f31fae0d44b323@github.com/dacm26/jobsity-chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dacm26/jobsity-chat/issues"
+  },
+  "homepage": "https://github.com/dacm26/jobsity-chat#readme"
+}

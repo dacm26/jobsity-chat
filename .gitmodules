@@ -1,0 +1,6 @@
+[submodule "packages/angular-chat-client"]
+	path = packages/angular-chat-client
+	url = https://github.com/dacm26/angular-chat-client
+[submodule "packages/nestjs-chat-server"]
+	path = packages/nestjs-chat-server
+	url = https://github.com/dacm26/nestjs-chat-server
